@@ -1,20 +1,14 @@
-function handleSelect(event) {
+function handleSelection(event) {
   event.preventDefault();
-  const selection = document.getElementById("beverage").value;
+  const selection1 = document.getElementById("snack").value;
 }
-
 window.addEventListener("load", function() {
-  document.getElementById("select-form").addEventListener("submit", handleSelect);
+  document.getElementById("snack-form").addEventListener("submit", handleSelection);
+
 });
-
-
-
-
-
-document.getElementById('submit').addEventListener('click', function() {
-  
-  for (let i = 0; i < document.forms.length; i++) {
-    document.forms[i].submit();
-  };
-  console.log(document.forms.length);
-});
+// I would use this function below to submit all of the forms but for our purposes / time constraints the last form with 'id =snack' will be used for result data 
+// submitForms = function(){
+ // document.getElementById("beverage").submit();
+//  document.getElementById("snack").submit();
+// 
+document.querySelector("span#result").innertext = // Javascript,Ruby,
