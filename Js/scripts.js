@@ -1,14 +1,61 @@
-function handleSelection(event) {
-  event.preventDefault();
-  const selection1 = document.getElementById("snack").value;
-}
-window.addEventListener("load", function() {
-  document.getElementById("snack-form").addEventListener("submit", handleSelection);
+//function handleSelection(event) {
+ // event.preventDefault();
+//  let selection = document.getElementById("snack").value;
+//}
 
+
+//window.addEventListener("load", function () {
+//  document.getElementById("snack-form").addEventListener("submit", handleSelection);
+
+//});
+
+//selection 
+
+function handleRadio(event) {
+  event.preventDefault();
+  const radioSelection = document.querySelector("input[name='flavor']:checked").value;
+}
+
+window.addEventListener("load", function() {
+  document.getElementById("radio-form").addEventListener("submit", handleRadio);
 });
-// I would use this function below to submit all of the forms but for our purposes / time constraints the last form with 'id =snack' will be used for result data 
+if (typeof radioSelection === 'undefined') {
+  console.log('Variable is undefined');
+}
+if (radioSelection === "1" || "4") {
+  document.getElementById("answer1").removeAttribute("class","hidden")
+  console.log('variable is submitting');
+}
+else if (radioSelection === "2") {
+  document.getElementById("answer2").removeAttribute("class","hidden");
+}
+else if (radioSelection === "3") {
+  document.getElementById("answer3").removeAttribute("class","hidden");
+}
+
+//window.onsubmit = function(event){
+ // event.preventDefault();
+ // let selection = document.getElementById("snack").value;
+//}
+
+
+//if (typeof selection === 'undefined') {
+//console.log('Variable is undefined');
+//}
+ if (selection === "1" || "4") {
+  document.getElementById("answer1").removeAttribute("class","hidden")
+  console.log('variable is submitting');
+}
+else if (selection === "2") {
+  document.getElementById("answer2").removeAttribute("class","hidden");
+}
+else if (selection === "3") {
+  document.getElementById("answer3").removeAttribute("class","hidden");
+}
+
+// I would use this function below to submit all of the forms but for our purposes / time constraints the last form with 'id =snack' will be used for result data
 // submitForms = function(){
- // document.getElementById("beverage").submit();
+// document.getElementById("beverage").submit();
 //  document.getElementById("snack").submit();
-// 
-document.querySelector("span#result").innertext = // Javascript,Ruby,
+//
+ // do you need "" around numbers in If and els if ?????
