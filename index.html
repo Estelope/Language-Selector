@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,63 @@
 </head>
 
 <body>
-  <h1> Tell us more about you to find the right language to learn!</h1>
-  <form>
+  <h1> Answer these to find the right language to learn!</h1>
 
+  <form id="animal-form">
+    <label for="animal-form"> Choose an ideal pet in your opinion</label>
+    <select id="animal">
+      <option>Siamese Cat</option>
+      <option>German Sheppard Dog</option>
+      <option>Bearded Dragon </option>
+    </select>
   </form>
+  <hr>
+  <form id="beverage-form">
+    <label for="beverage-form"> Which drink sounds the best?</label>
+    <select id="beverage">
+      <option>Coffee</option>
+      <option>Chai Tea</option>
+      <option>Kombucha</option>
+      <option>Carbonated Water</option>
+    </select>
+  </form>
+  <hr>
+  <form id="place-form">
+    <label for="place-form"> Where would you like to visit ?</label>
+    <select id="place">
+      <option>Las Vegas</option>
+      <option>Athens</option>
+      <option>Venice </option>
+      <option>Bali</option>
+    </select>
+  </form>
+  <hr>
+  <form id="people-form">
+    <label for="people-form"> Which describes you the best?</label>
+    <select id="people">
+      <option>Strong</option>
+      <option>Courageous</option>
+      <option>Reserved</option>
+      <option>Intuitive</option>
+    </select>
+  </form>
+  <hr>
+  <form id="snack-form">
+    <label for="snack-form"> What snack sounds the tastiest?</label>
+    <select id="snack">
+      <option>Milk Chocolate</option>
+      <option>Dark Chocolate</option>
+      <option>Trail mix</option>
+      <option>Cheetos</option>
+    </select>
+  </form>
+  <button id="submit" type="submit">Submit Selection</button>
 
-  
+
+  <div id="answer" class="hidden">
+    <p>Based off of your personality quiz, <span id=    > ________ </span> has been selected as your language of choice to learn!</p>
+
+  </div>
 </body>
+
 </html>
