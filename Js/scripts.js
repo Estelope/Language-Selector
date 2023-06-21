@@ -2,11 +2,38 @@
 function handleRadio(event) {
   event.preventDefault();
   const radioSelection = document.querySelector("input[name='flavor']:checked").value;
+  // let checkedValue =document.getElementById("choc").value;
+  
 }
+
 
 window.addEventListener("load", function() {
   document.getElementById("radio-form").addEventListener("submit", handleRadio);
+
+  
+if (typeof radioSelection === 'undefined') {
+  console.log('Variable is undefined');
+}
+// used this for troubleshooting and coudlnt get my input values to show for dropdown forms or radioSelection variable. 
+else if(radioSelection === "choc") {
+  document.getElementById("answer1").removeAttribute("class","hidden")
+  console.log('variable is submitting');
+}
+else if (radioSelection === "van") {
+  document.getElementById("answer2").removeAttribute("class","hidden");
+}
+else if (radioSelection === "cookies") {
+  document.getElementById("answer3").removeAttribute("class","hidden");
+}
+  
 });
+
+
+
+
+
+
+let result;
 if (typeof radioSelection === 'undefined') {
   console.log('Variable is undefined');
 }
