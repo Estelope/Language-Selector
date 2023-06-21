@@ -18,7 +18,7 @@ function handleRadio(event) {
     document.getElementById("answer3").removeAttribute("class","hidden");
   }
     
-  };
+};
 
 
 
