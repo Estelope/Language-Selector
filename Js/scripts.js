@@ -7,13 +7,19 @@ function handleRadio(event) {
   }
   
   else if (radioSelection === "1") {
-    document.getElementById("answer1").removeAttribute("class", "hidden")
+    document.getElementById("answer1").removeAttribute("class", "hidden");
+    document.getElementById("answer2").setAttribute("class", "hidden");
+    document.getElementById("answer3").setAttribute("class", "hidden");
   }
   else if (radioSelection === "2") {
     document.getElementById("answer2").removeAttribute("class", "hidden");
+    document.getElementById("answer1").setAttribute("class", "hidden");
+    document.getElementById("answer3").setAttribute("class", "hidden");
   }
   else if (radioSelection === "3") {
     document.getElementById("answer3").removeAttribute("class", "hidden");
+    document.getElementById("answer1").setAttribute("class", "hidden");
+    document.getElementById("answer2").setAttribute("class", "hidden");
   }
 
 };
